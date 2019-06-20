@@ -12,4 +12,12 @@ const fetchUsers = () => {
 
 }
 
-export { fetchUsers }; 
+const fetchUser = (userID) => {
+    return axios.get(`https://jsonplaceholder.typicode.com/users/${userID}`)
+        .then(res => res.data)
+        .then(user => {
+            return new User(user.id, user.name, user.email, user.address.city, user.website);
+        })
+}
+
+export { fetchUsers, fetchUser }; 
