@@ -1,11 +1,10 @@
 import React from 'react';
-import Home from '../../pages/Home/Home.js';
 
-const Main = () => {
+const Main = (props) => {
     return (
-        <div>
-            <Home />
-        </div>
+        <main>
+            {props.children}
+        </main>
     )
 }
 

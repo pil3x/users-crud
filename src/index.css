@@ -8,6 +8,24 @@ body {
   background-color: #343a40;
 }
 
+.nav-link {
+  padding: 0;
+}
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  background-color: #343a40;
+  border-top: 1px solid #454d55;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
