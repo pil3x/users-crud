@@ -24,10 +24,9 @@ class UserSingle extends React.Component {
     }
 
     render() {
-        const { author } = this.state;
+        // const { author } = this.state;
         return (
             <div className="text-light">User Single
-            <p>sds</p>
             </div>
         )
     }
