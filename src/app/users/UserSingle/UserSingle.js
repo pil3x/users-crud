@@ -6,7 +6,7 @@ class UserSingle extends React.Component {
         super(props);
 
         this.state = {
-            author: null
+            user: null
         }
     }
 
@@ -15,7 +15,7 @@ class UserSingle extends React.Component {
         fetchUser(userId)
             .then(data => {
                 console.log(data);
-                return this.setState({ author: data });
+                return this.setState({ user: data });
             })
     }
 
@@ -24,7 +24,11 @@ class UserSingle extends React.Component {
     }
 
     render() {
-        // const { author } = this.state;
+        const { user } = this.state;
+        if (!user) {
+            return <p> Loading User...</p>
+        }
+
         return (
             <div className="text-light">User Single
             </div>
